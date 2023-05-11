@@ -14,8 +14,6 @@ spring:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
     url: jdbc:mysql://mysql-petclinic-7afac4.mysql.database.azure.com:3306/flexibleserverdb?useSSL=true
-    username: myadmin
-    password: Bazinga520
     initialization-mode: ALWAYS
   sleuth:
     sampler:
