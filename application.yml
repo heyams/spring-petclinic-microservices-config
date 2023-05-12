@@ -15,6 +15,11 @@ spring:
     data: classpath*:db/mysql/data.sql
     url: jdbc:mysql://mysql-petclinic-7afac4.mysql.database.azure.com:3306/flexibleserverdb?useSSL=true
     initialization-mode: ALWAYS
+  jms:
+    servicebus:
+      connection-string: ${spring.jms.servicebus.connectionstring}
+      idle-timeout: 60000
+      pricing-tier: premium
   sleuth:
     sampler:
       probability: 1.0
